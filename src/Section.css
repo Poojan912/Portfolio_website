@@ -1,0 +1,22 @@
+.section {
+    padding: 100px 20px;
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+  
+  #home {
+    background-color: #f0f8ff;
+  }
+  
+  #projects {
+    background-color: #faebd7;
+  }
+  
+  #skills {
+    background-color: #7fffd4;
+  }
+  
+  #contact {
+    background-color: #ffe4c4;
+  }
+  

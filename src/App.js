@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React, { useRef, useEffect } from 'react';
+import Header from './Header';
+import Home from './Home';
+import Projects from './Projects';
+import Skills from './Skills';
+import Contact from './Contact';
 import './App.css';
 
 function App() {
+  const sectionsRef = useRef([]);
+
+  useEffect(() => {
+    sectionsRef.current = sectionsRef.current.slice(0, 4); 
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header sectionsRef={sectionsRef} />
+      <Home ref={(el) => (sectionsRef.current[0] = el)} />
+      <Projects ref={(el) => (sectionsRef.current[1] = el)} />
+      <Skills ref={(el) => (sectionsRef.current[2] = el)} />
+      <Contact ref={(el) => (sectionsRef.current[3] = el)} />
     </div>
   );
 }
