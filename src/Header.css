@@ -1,45 +1,49 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    margin: 0 0px; /* Add margin to prevent the header from going outside the screen */
-    background-color: #ffffff;
-    position: fixed;
-    width: calc(100% - 5px); /* Adjust the width to account for the margins */
-    top: 0;
-    z-index: 1000;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  }
-  
-  .left-side {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 1rem;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .right-side a {
-    margin-left: 1rem;
-    text-decoration: none;
-    color: #333;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .right-side a.active {
-    color: #007BFF;
-    font-weight: bold;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 0 0px; 
+  background-color: #000000;
+  width: calc(100% - 0px); 
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+  box-sizing: border-box; 
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff; 
+}
+
+.right-side a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fff; 
+  font-size: 1rem;
+  padding: 0.5rem 1rem; 
+  position: relative; 
+  transition: color 0.3s ease;
+}
+
+.right-side a.active {
+  color: #fff; 
+  font-weight: bold;
+  border: 2px solid #007BFF; 
+  border-radius: 4px; 
+  background-color: rgba(0, 123, 255, 0.2); 
+}

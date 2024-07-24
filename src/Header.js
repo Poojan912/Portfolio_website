@@ -38,7 +38,7 @@ const Header = ({ sectionsRef }) => {
         <div className="logo">
           <img src="Profile_photo.jpeg" alt="Logo" />
         </div>
-        <h1>Poojan Akhani</h1>
+        <h1>Poojan.A</h1>
       </div>
       <nav className="right-side">
         <a href="#home" className={activeSection === 'home' ? 'active' : ''}>Home</a>
