@@ -1,0 +1,126 @@
+.projects-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #334673, #12213f, #0e302c);
+  color: #fff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+  align-items: start;
+  background: #5a5d78;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2a62d3;
+  text-align: left;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #f5f4f4;
+  text-align: left;
+}
+
+.project-image-container {
+  width: 100%;
+  height: 200px; /* Set a fixed height for uniformity */
+  overflow: hidden;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.project-image {
+  width: 100%;
+  height: 150px; /* Ensure the image takes up the entire container */
+  object-fit: cover; /* This will crop the image if it doesn't fit perfectly */
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.technology {
+  background-color: #2a62d3;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.875rem;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #687da6;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+.github-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2a62d3;
+  z-index: -1;
+  transition: transform 0.5s ease;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.github-button:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.github-button:hover {
+  color: #2c2c2c;
+}
+
+@media (max-width: 768px) {
+  .projects-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}

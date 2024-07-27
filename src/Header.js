@@ -35,15 +35,12 @@ const Header = ({ sectionsRef }) => {
   return (
     <header className="header">
       <div className="left-side">
-        <div className="logo">
-          <img src="Profile_photo.jpeg" alt="Logo" />
-        </div>
         <h1>Poojan.A</h1>
       </div>
       <nav className="right-side">
         <a href="#home" className={activeSection === 'home' ? 'active' : ''}>Home</a>
         <a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Projects</a>
-        <a href="#skills" className={activeSection === 'skills' ? 'active' : ''}>Skills</a>
+        <a href="#experience" className={activeSection === 'experience' ? 'active' : ''}>Experience</a>
         <a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact Me</a>
       </nav>
     </header>

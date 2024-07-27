@@ -1,0 +1,35 @@
+.internship-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .internship-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .company-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
