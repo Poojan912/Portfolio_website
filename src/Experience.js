@@ -3,21 +3,25 @@ import './Experience.css';
 
 const experiences = [
   {
-    title: 'Software Engineer Intern',
-    company: 'ABC Corp',
-    duration: 'Jan 2020 - Jun 2020',
-    description: 'Developed and maintained various software applications, collaborated with the development team to implement new features.',
-    image: 'abc_corp.png',
-    technologies: ['React', 'Node.js', 'MongoDB']
+    title: 'Android Developer Trainee, Full-Time',
+    company: 'ZetrixWeb Infotech LLP, Ahmedabad, India',
+    duration: 'Feb 2023 - Apr 2023',
+    description: 'Develop, update, test, debug, and troubleshoot Android applications using Kotlin and Java Programming Language in Android Studio.',
+    technologies: ['Android Studio', 'Java', 'Kotlin','Firebase','JetPack Compose'],
+    className: 'experience-android' // Unique class
   },
   {
-    title: 'Frontend Developer Intern',
-    company: 'XYZ Ltd',
-    duration: 'Jun 2018 - Dec 2018',
-    description: 'Built responsive and user-friendly web interfaces using modern frontend technologies, optimized website performance.',
-    image: 'xyz_ltd.png',
-    technologies: ['HTML', 'CSS', 'JavaScript']
+    title: 'Java Developer',
+    company: 'Next Technolabs LLP, Ahmedabad, India',
+    duration: 'Jun 2022 - Jul 2022',
+    description: 'Built responsiveDesign, maintain, and build reusable, efficient, and reliable Java code, incorporating Hibernate and Spring, while also assisting in maintaining and updating existing applications and modules and user-friendly web interfaces using modern frontend technologies, optimized website performance.',
+    technologies: ['HTML', 'CSS', 'Java','Hibernate','Spring Boot','MySql'],
+    className: 'experience-java' // Unique class
   },
+];
+
+const skills = [
+  'HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'SQL', 'Java', 'Spring Boot', 'Kotlin', 'Android Studio', 'Firebase', 'JetPack Compose'
 ];
 
 const Experience = React.forwardRef((props, ref) => {
@@ -26,26 +30,36 @@ const Experience = React.forwardRef((props, ref) => {
       <h2 className="section-title">Experience</h2>
       <div className="experience-scroll-container">
         {experiences.map((experience, index) => (
-          <div className={`experience-card ${index % 2 === 0 ? 'even' : 'odd'}`} key={index}>
-            <div className="experience-content">
-              <div className="experience-description">
-                <h3 className="experience-title">{experience.title}</h3>
-                <p className="experience-company">{experience.company}</p>
-                <p className="experience-duration">{experience.duration}</p>
-                <p className="experience-text">{experience.description}</p>
-                <div className="experience-technologies">
-                  {experience.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="technology">{tech}</span>
-                  ))}
-                </div>
+          <div className={`experience-card ${experience.className}`} key={index}>
+            <div className="experience-description">
+              <h3 className="experience-title">{experience.title}</h3>
+              <p className="experience-duration">{experience.duration}</p>
+              <p className="experience-text">{experience.description}</p>
+              <div className="experience-technologies">
+                {experience.technologies.map((tech, techIndex) => (
+                  <span key={techIndex} className="technology">{tech}</span>
+                ))}
               </div>
-              <div className="experience-image-container">
-                <img src={experience.image} alt={experience.title} className="experience-image" />
-              </div>
+            </div>
+            <div className="experience-company">
+              <p>{experience.company}</p>
             </div>
           </div>
         ))}
       </div>
+
+      {/* Tech Stack Section */}
+      <section className="section tech-stack-section">
+        <div className="tech-description">
+          <h2 className="tech-stack-title">Tech Stack</h2>
+          <p>These are the technologies and tools I have worked with:</p>
+        </div>
+        <div className="tech-skills">
+          {skills.map((skill, index) => (
+            <div key={index} className="skill">{skill}</div>
+          ))}
+        </div>
+      </section>
     </section>
   );
 });
