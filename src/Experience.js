@@ -7,7 +7,7 @@ const experiences = [
     company: 'ZetrixWeb Infotech LLP, Ahmedabad, India',
     duration: 'Feb 2023 - Apr 2023',
     description: 'Develop, update, test, debug, and troubleshoot Android applications using Kotlin and Java Programming Language in Android Studio.',
-    technologies: ['Android Studio', 'Java', 'Kotlin','Firebase','JetPack Compose'],
+    technologies: ['Android Studio', 'Java', 'Kotlin', 'Firebase', 'JetPack Compose'],
     className: 'experience-android' // Unique class
   },
   {
@@ -15,7 +15,7 @@ const experiences = [
     company: 'Next Technolabs LLP, Ahmedabad, India',
     duration: 'Jun 2022 - Jul 2022',
     description: 'Built responsiveDesign, maintain, and build reusable, efficient, and reliable Java code, incorporating Hibernate and Spring, while also assisting in maintaining and updating existing applications and modules and user-friendly web interfaces using modern frontend technologies, optimized website performance.',
-    technologies: ['HTML', 'CSS', 'Java','Hibernate','Spring Boot','MySql'],
+    technologies: ['HTML', 'CSS', 'Java', 'Hibernate', 'Spring Boot', 'MySql'],
     className: 'experience-java' // Unique class
   },
 ];
@@ -48,18 +48,17 @@ const Experience = React.forwardRef((props, ref) => {
         ))}
       </div>
 
-      {/* Tech Stack Section */}
-      <section className="section tech-stack-section">
+      {/* Tech Stack Section within Experience */}
+      <div className="tech-stack-container">
         <div className="tech-description">
-          <h2 className="tech-stack-title">Tech Stack</h2>
-          <p>These are the technologies and tools I have worked with:</p>
+          <h3 className="tech-stack-title">Tech Stack</h3>
         </div>
         <div className="tech-skills">
           {skills.map((skill, index) => (
             <div key={index} className="skill">{skill}</div>
           ))}
         </div>
-      </section>
+      </div>
     </section>
   );
 });

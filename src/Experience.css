@@ -1,24 +1,21 @@
-.tech-stack-section {
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #12213f, #334673, #0e302c);
+
+.tech-stack-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 50px;
   padding-left: 250px;
   padding-right: 250px;
-
+  background-color: #12213f; /* Adjust color as needed */
+  border-radius: 10px;
 }
 
-.tech-stack-title {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #fff;
-}
-
-.tech-description {
+.tech-description.h3 {
   flex: 1;
   margin-right: 20px;
   font-size: 1.2rem;
+  align-self: center;
+  align-items: center;
   color: #fff;
 }
 
@@ -36,7 +33,6 @@
   border-radius: 5px;
   font-size: 1rem;
 }
-
 
 
 .experience-section {
