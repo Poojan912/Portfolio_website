@@ -15,7 +15,7 @@ const Home = React.forwardRef((props, ref) => {
           <p className="description">
             I specialize in building amazing software solutions. With a passion for coding and a knack for problem-solving, I strive to create innovative and efficient applications.
           </p>
-          <a href="https://drive.google.com/file/d/1A7ZHUJW_5IANJBWotgZLrM2lMRKaxmP7/view?usp=drive_link" className="resume-button" target="_blank" rel="noopener noreferrer">
+          <a href="https://drive.google.com/file/d/1BWZjVfcF2EmP6RUodU0uUyAhGXjboFTJ/view?usp=sharing" className="resume-button" target="_blank" rel="noopener noreferrer">
             Checkout Resume
           </a>
         </div>
