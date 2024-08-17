@@ -23,6 +23,13 @@ const projects = [
     github: 'https://github.com/Poojan912/Order-Manager-Application',
     technologies: ['Android Studio', 'Kotlin', 'JetPack Compose', 'Firebase']
   },
+  {
+    title: 'E-commerce Website',
+    description: 'E-Commerce website with user authentication, product management, shopping cart, and secure payment integration using HTML, CSS, JavaScript, and Java.',
+    image: 'ecommerce.png',
+    github: 'https://github.com/Poojan912/project_java',
+    technologies: ['Java', 'MySQL', 'Hibernate']
+  },
 ];
 
 const Projects = React.forwardRef((props, ref) => {
